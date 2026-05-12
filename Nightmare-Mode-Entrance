@@ -86,7 +86,7 @@ fadeIn:Play()
 shadowIn:Play()
 fadeIn.Completed:Wait()
 
-task.wait(12) 
+task.wait(3.2) 
 
 fadeOut:Play()
 shadowOut:Play()
