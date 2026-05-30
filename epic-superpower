@@ -1,0 +1,15 @@
+local SoundService = game:GetService("SoundService")
+
+local function getGitSoundId(url, name)
+    if not isfile(name..".mp3") then
+        writefile(name..".mp3", game:HttpGet(url))
+    end
+    local Sound = Instance.new("Sound")
+    Sound.SoundId = (getcustomasset or getsynasset)(name..".mp3")
+    return Sound
+end
+
+local s = getGitSoundId("https://github.com/idkman60093/Audio/blob/main/fart-superpower.mp3", "epic")
+s.Parent = SoundService
+s:Play()
+print("Sound playing: " .. tostring(s.Playing))
