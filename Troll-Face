@@ -1,0 +1,7 @@
+local cue2 = Instance.new("Sound")
+ cue2.Parent = game.Workspace
+ cue2.Name = "Spawn"
+ cue2.SoundId = "rbxassetid://117248295851911"
+ cue2.Volume = 2.5
+ cue2.PlaybackSpeed = 1
+ cue2:Play()
